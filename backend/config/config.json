@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "root",
+    "password": "Support100%",
+    "database": "chemical_compounds",
+    "host": "127.0.0.1",
+    "port": "3305",
+    "dialect": "mysql"
+  },
+  "test": {
+     "username": "root",
+    "password": "Support100%",
+    "database": "chemical_compounds",
+    "host": "127.0.0.1",
+    "port": "3305",
+    "dialect": "mysql"
+  },
+  "production": {
+  "username": "root",
+    "password": "Support100%",
+    "database": "chemical_compounds",
+    "host": "127.0.0.1",
+    "port": "3305",
+    "dialect": "mysql"
+  }
+}

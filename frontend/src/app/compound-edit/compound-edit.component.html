@@ -1,0 +1,21 @@
+<div class="edit-compound">
+    <h2>Edit Compound</h2>
+    <form [formGroup]="compoundForm" (ngSubmit)="onSubmit()">
+        <div class="form-group">
+            <label for="CompoundName">Name:</label>
+            <input id="CompoundName" formControlName="CompoundName" />
+        </div>
+
+        <div class="form-group">
+            <label for="CompounrDescription">Description:</label>
+            <textarea id="CompounrDescription" formControlName="CompounrDescription"></textarea>
+        </div>
+
+        <div class="form-group">
+            <label for="strImageSource">Image URL:</label>
+            <input id="strImageSource" formControlName="strImageSource" />
+        </div>
+
+        <button type="submit" [disabled]="compoundForm.invalid">Save</button>
+    </form>
+</div>

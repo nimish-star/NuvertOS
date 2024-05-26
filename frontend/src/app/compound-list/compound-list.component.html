@@ -1,0 +1,21 @@
+<div class="compound-list">
+    <div *ngFor="let compound of compounds" class="compound-card">
+        <div class="image-container">
+            <img [src]="compound.strImageSource" alt="{{ compound.CompoundName }}">
+        </div>
+        <h2>{{ compound.CompoundName }}</h2>
+        <p>{{ compound.CompounrDescription }}</p>
+        <div class="actions">
+            <!-- <a [routerLink]="['/compounds', compound.id]" class="button view-button">View</a> -->
+            <a [routerLink]="['/compound/edit', compound.id]" class="button edit-button">Edit</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+<!-- <div *ngFor="let compound of compounds">
+    <a [routerLink]="['/compounds', compound.id]">View</a>
+    <a [routerLink]="['/compounds/edit', compound.id]">Edit</a>
+</div> -->

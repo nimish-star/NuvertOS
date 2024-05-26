@@ -1,0 +1,6 @@
+<div *ngIf="compound">
+    <h2>{{compound.name}}</h2>
+    <img [src]="compound.image" alt="{{compound.name}}">
+    <p>{{compound.description}}</p>
+    <button mat-button [routerLink]="['/edit', compound.id]">Edit</button>
+</div>
